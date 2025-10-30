@@ -2,7 +2,8 @@
  *
  * Created by: Alexander
  * Created on: Oct 2025
- * This program turns on neopixels based on the number displayed
+ * This program turns on neopixels based 
+ * on the number displayed
 */
 
 // variables
@@ -19,16 +20,43 @@ xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
 xandersNeopixelStrip.show()
 basic.showIcon(IconNames.Happy)
 
-// 
+// turn on all the lights
 input.onButtonPressed(Button.A, function() {
-    xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
-    xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
-    xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
-    xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
-    xandersNeopixelStrip.show()
     while (loopCounter > 0) {
-        basic.showNumber(loopCounter)
-        xandersNeopixelStrip.setPixelColor(loopCounter, neopixel.colors(NeoPixelColors.White))
-        loopCounter = loopCounter -1
+
+        if (loopCounter == 4) {
+            xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.show()
+            basic.showNumber(loopCounter)
+            loopCounter = loopCounter - 1
+        }
+
+        if (loopCounter == 3) {
+            xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.show()
+            basic.showNumber(loopCounter)
+            loopCounter = loopCounter - 1
+        }
+
+        if (loopCounter == 2) {
+            xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.show()
+            basic.showNumber(loopCounter)
+            loopCounter = loopCounter - 1
+        }
+
+        if (loopCounter == 1) {
+            xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.show()
+            basic.showNumber(loopCounter)
+            loopCounter = loopCounter - 1
+        }
+        
     }
 })
