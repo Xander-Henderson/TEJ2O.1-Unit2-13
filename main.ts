@@ -38,6 +38,7 @@ input.onButtonPressed(Button.A, function() {
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
             xandersNeopixelStrip.show()
             basic.showNumber(loopCounter)
             loopCounter = loopCounter - 1
@@ -46,6 +47,8 @@ input.onButtonPressed(Button.A, function() {
         if (loopCounter == 2) {
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+            xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
             xandersNeopixelStrip.show()
             basic.showNumber(loopCounter)
             loopCounter = loopCounter - 1
@@ -53,10 +56,20 @@ input.onButtonPressed(Button.A, function() {
 
         if (loopCounter == 1) {
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
+            xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+            xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+            xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
             xandersNeopixelStrip.show()
             basic.showNumber(loopCounter)
             loopCounter = loopCounter - 1
         }
         
+    } if (loopCounter == 0) {
+        xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+        xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+        xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+        xandersNeopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+        xandersNeopixelStrip.show()
+        basic.showNumber(loopCounter)
     }
 })
