@@ -25,6 +25,7 @@ input.onButtonPressed(Button.A, function() {
     while (loopCounter > 0) {
 
         if (loopCounter == 4) {
+            // lights up 4 neopixels
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
@@ -35,6 +36,7 @@ input.onButtonPressed(Button.A, function() {
         }
 
         if (loopCounter == 3) {
+            // lights up 3 neopixels
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.White))
@@ -45,6 +47,7 @@ input.onButtonPressed(Button.A, function() {
         }
 
         if (loopCounter == 2) {
+            // lights up 2 neopixels
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -55,6 +58,7 @@ input.onButtonPressed(Button.A, function() {
         }
 
         if (loopCounter == 1) {
+            // lights up 1 neopixels
             xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.White))
             xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
             xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
@@ -65,6 +69,7 @@ input.onButtonPressed(Button.A, function() {
         }
         
     } if (loopCounter == 0) {
+        // turns off al neopixels
         xandersNeopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
         xandersNeopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
         xandersNeopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
